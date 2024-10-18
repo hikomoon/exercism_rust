@@ -3,5 +3,8 @@ edition = "2021"
 name = "reverse_string"
 version = "1.2.0"
 
+[dependencies]
+unicode-segmentation = { version = "1.11.0", optional = true }
+
 [features]
-grapheme = []
+grapheme = ["unicode-segmentation"]
